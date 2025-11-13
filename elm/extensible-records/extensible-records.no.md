@@ -1,8 +1,7 @@
 ---
 theme: default
 paginate: true
-header: "![](/enso.svg)"
-footer: Christian Ekrem, 13. nov '25
+footer: Christian Ekrem, 13. nov '25 – @Lovdata
 ---
 
 # Extensible Records i Elm
@@ -282,7 +281,6 @@ type alias HasName a =
     }
 
 -- ny, smalere typesignatur:
-
 prettyPrintName : HasLanguage a -> HasName b -> Html msg
 prettyPrintName { language } { firstName, lastName} =
   -- Implementasjon som før
