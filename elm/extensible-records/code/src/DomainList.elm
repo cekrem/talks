@@ -20,7 +20,7 @@ type alias Sanitized a =
     }
 
 
-type alias Safe a =
+type alias SafeForRender a =
     { a
         | sorted : ()
         , validated : ()
@@ -42,11 +42,11 @@ sanitize (DomainList list) =
     DomainList (list |> List.filter (\entry -> entry /= "bad word"))
 
 
-render : DomainList (Safe a) -> Html msg
+render : DomainList (SafeForRender a) -> Html msg
 render (DomainList list) =
     Html.div []
         [ Html.h1 []
             [ Html.text "The following is oh-so-safe, both sorted and Sanitized. The Compiler guarantees it!" ]
         , Html.ul []
-            (list |> List.map Html.text)
+            (list |> List.map (\entry -> Html.li [] [ Html.text entry ]))
         ]

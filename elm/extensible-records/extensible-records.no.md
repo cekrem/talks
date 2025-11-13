@@ -287,3 +287,124 @@ prettyPrintName : HasLanguage a -> HasName b -> Html msg
 prettyPrintName { language } { firstName, lastName} =
   -- Implementasjon som før
 ```
+
+---
+
+# Del 3: Phantom types med Extensible Records
+
+```elm
+main : Html msg
+main =
+    DomainList.new [ "one word", "bad word", "other word" ]
+        |> DomainList.sort -- kan vi få compileren til å enforce sortering?
+        |> DomainList.sanitize -- hva med det her; kan det være non-optional?
+        |> DomainList.render
+
+-- Spoiler: Ja.
+```
+
+---
+
+## `DomainList` del 1: Typer
+
+```elm
+type DomainList a -- `a` er en "phantom type": brukes kun på venstre siden av `=`
+    = DomainList (List String)
+
+
+type alias Sorted a =
+    { a
+        | sorted : ()
+    }
+
+
+type alias Sanitized a =
+    { a
+        | validated : ()
+    }
+
+
+type alias SafeForRender a =
+    { a
+        | sorted : ()
+        , validated : ()
+    }
+
+```
+
+---
+
+## `DomainList` del 2: Implementasjon
+
+```elm
+new : List String -> DomainList {}
+new list =
+    DomainList list
+
+
+sort : DomainList a -> DomainList (Sorted a)
+sort (DomainList list) =
+    DomainList (List.sort list)
+
+
+sanitize : DomainList a -> DomainList (Sanitized a)
+sanitize (DomainList list) =
+    DomainList (list |> List.filter (\entry -> entry /= "bad word"))
+
+
+render : DomainList (SafeForRender a) -> Html msg
+render (DomainList list) =
+    Html.div []
+        [ Html.h1 []
+            [ Html.text "The following is oh-so-safe, both sorted and Sanitized. The Compiler guarantees it!" ]
+        , Html.ul []
+            (list |> List.map (\entry -> Html.li [] [ Html.text entry ]))
+        ]
+
+```
+
+---
+
+## Compile-time garanti 1: listen må være sortert
+
+```text
+-- TYPE MISMATCH --------------- /Users/cekrem/code/talks/elm/extensible-records/src/Main.elm
+
+This function cannot handle the argument sent through the (|>) pipe:
+
+ 9|     DomainList.new [ "one word", "bad word", "other word" ]
+10|         -- let's skip sorting |> DomainList.sort
+11|         |> DomainList.sanitize
+12|         |> DomainList.render
+               ^^^^^^^^^^^^^^^^^
+The argument is:
+
+    DomainList.DomainList (DomainList.Sanitized {})
+
+But (|>) is piping it to a function that expects:
+
+    DomainList.DomainList { a | sorted : (), validated : () }
+```
+
+---
+
+## Compile-time garanti 2: listen må være sanitized
+
+```text
+-- TYPE MISMATCH --------------- /Users/cekrem/code/talks/elm/extensible-records/src/Main.elm
+
+This function cannot handle the argument sent through the (|>) pipe:
+
+ 9|     DomainList.new [ "one word", "bad word", "other word" ]
+10|         |> DomainList.sort
+11|         -- let's skip sanitizing: |> DomainList.sanitize
+12|         |> DomainList.render
+               ^^^^^^^^^^^^^^^^^
+The argument is:
+
+    DomainList.DomainList (DomainList.Sorted {})
+
+But (|>) is piping it to a function that expects:
+
+    DomainList.DomainList { a | sorted : (), validated : () }
+```
