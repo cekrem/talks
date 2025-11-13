@@ -5,4 +5,8 @@ mkdir dist
 cp enso-theme.css dist/
 
 find . -name "*.md" -exec npx @marp-team/marp-cli@latest {} \;
+find . -name "*.md" -exec npx @marp-team/marp-cli@latest {} --pdf \;
+find . -name "*.md" -exec npx @marp-team/marp-cli@latest {} --pptx \;
 find . -name "*.html" -exec mv {} dist/ \;
+find . -name "*.pdf" -exec mv {} dist/ \;
+find . -name "*.pptx" -exec mv {} dist/ \;

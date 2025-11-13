@@ -16,14 +16,14 @@ type alias Sorted a =
 
 type alias Sanitized a =
     { a
-        | validated : ()
+        | sanitized : ()
     }
 
 
 type alias SafeForRender a =
     { a
         | sorted : ()
-        , validated : ()
+        , sanitized : ()
     }
 
 

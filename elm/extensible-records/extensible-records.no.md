@@ -318,14 +318,14 @@ type alias Sorted a =
 
 type alias Sanitized a =
     { a
-        | validated : ()
+        | sanitized : ()
     }
 
 
 type alias SafeForRender a =
     { a
         | sorted : ()
-        , validated : ()
+        , sanitized : ()
     }
 
 ```
@@ -381,7 +381,7 @@ The argument is:
 
 But (|>) is piping it to a function that expects:
 
-    DomainList.DomainList { a | sorted : (), validated : () }
+    DomainList.DomainList { a | sorted : (), sanitized : () }
 ```
 
 ---
@@ -404,5 +404,9 @@ The argument is:
 
 But (|>) is piping it to a function that expects:
 
-    DomainList.DomainList { a | sorted : (), validated : () }
+    DomainList.DomainList { a | sorted : (), sanitized : () }
 ```
+
+---
+
+# That's all. ☺️
