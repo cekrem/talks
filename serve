@@ -1,0 +1,2 @@
+#!/bin/sh
+npx @marp-team/marp-cli@latest --theme ./enso-theme.css -s .
