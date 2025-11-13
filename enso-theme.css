@@ -1,0 +1,42 @@
+/* @theme enso */
+
+@import "default";
+
+:root {
+  --main-dark: #000;
+  --main-light: #fff;
+  --wine: #6d4646;
+  --black: #0e0e0e;
+  --light: #fff6f6;
+  --orange: #f8991d;
+  --rosy-brown: #c3a2a2;
+  --navajo-white: #ffe0b7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Deja Vu Sans Mono", Arial, sans-serif;
+  color: var(--wine);
+  margin: 0;
+}
+
+section {
+  background-color: var(--light);
+  font-family: "Deja Vu Sans Mono", Arial, sans-serif;
+  color: var(--black);
+  letter-spacing: 0;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+section::before {
+  display: block;
+  content: url("/enso.svg");
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 44px);
+}
