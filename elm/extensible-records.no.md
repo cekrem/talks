@@ -226,3 +226,64 @@ Merk: Man kan gjøre det samme med `Shared.Model` og `Settings` osv (selv om det
 ---
 
 # Del 2: Views
+
+```elm
+type alias Settings =
+    { apiUrl : ApiUrl.ApiUrl
+    , basePath : String
+    , colorScheme : ColorScheme.ColorScheme
+    , device : Device
+    , language : Language.Language
+    , translations : I18Next.Translations
+    , envSettings : EnvSettings
+    , features : FeatureFlags
+    , isForgePreview : Bool
+    , initialResizeAdjustment : Maybe Int
+    , initialTocOpen : Bool
+    }
+-- ...eller bare
+type alias Settings a =
+    { a | translations : I18Next.Translations }
+```
+
+---
+
+## Lag typer for det du trenger
+
+Kan `prettyPrintName` være mer spesifikk og mindre kravstor?
+
+```elm
+prettyPrintName : Settings -> Model -> Html msg
+prettyPrintName { language } { firstName, lastName} =
+  Html.span [] [
+    Html.text case language of
+      Language.Formal ->
+        lastName ++ ", " ++ firstName
+      Language.Casual ->
+        firstName ++ " " ++ lastName
+    ]
+```
+
+---
+
+## Med extensible records
+
+```elm
+type alias HasLanguage a =
+    { a
+        | language : Language.Language
+    }
+
+
+type alias HasName a =
+    { a
+        | firstName : String
+        , lastName : String
+    }
+
+-- ny, smalere typesignatur:
+
+prettyPrintName : HasLanguage a -> HasName b -> Html msg
+prettyPrintName { language } { firstName, lastName} =
+  -- Implementasjon som før
+```
