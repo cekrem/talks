@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm -rf dist
+mkdir dist
+cp enso-theme.css dist/
+
+find . -name "*.md" -exec npx @marp-team/marp-cli@latest {} \;
+find . -name "*.html" -exec mv {} dist/ \;

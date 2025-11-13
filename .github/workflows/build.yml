@@ -1,0 +1,29 @@
+name: build slides
+
+on:
+  push:
+    branches:
+      - master # Set a branch to deploy
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+
+      - uses: actions/checkout@v2
+        with:
+          submodules: false
+          fetch-depth: 0
+
+      - name: Build slides using script
+        run: ./build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/master'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
