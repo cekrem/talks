@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="C"><head><title>The Point of Abstractions</title><meta property="og:title" content="The Point of Abstractions"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=overview] button.bespoke-marp-overview-close,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{appearance:none;background-color:initial;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear;-webkit-tap-highlight-color:transparent}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=overview] button.bespoke-marp-overview-close:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=overview] button.bespoke-marp-overview-close:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=overview] button.bespoke-marp-overview-close:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=overview] button.bespoke-marp-overview-close:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNNDAgNzBIMjBWNTBtMjAgMEwyMCA3MG00MC00MGgyMHYyMG0tMjAgMCAyMC0yMCIgY2xhc3M9ImEiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNMjAgNTBoMjB2MjBtLTIwIDAgMjAtMjBtNDAgMEg2MFYzMG0yMCAwTDYwIDUwIiBjbGFzcz0iYSIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=overview] button.bespoke-marp-overview-close,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODBNNTIgOTBWMTAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=overview],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=overview]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4O3J4OjVweDtyeTo1cHg7d2lkdGg6MjVweDtoZWlnaHQ6MjVweH08L3N0eWxlPjwvZGVmcz48cmVjdCB4PSIyMCIgeT0iMjAiIGNsYXNzPSJhIi8+PHJlY3QgeD0iNTUiIHk9IjIwIiBjbGFzcz0iYSIvPjxyZWN0IHg9IjIwIiB5PSI1NSIgY2xhc3M9ImEiLz48cmVjdCB4PSI1NSIgeT0iNTUiIGNsYXNzPSJhIi8+PC9zdmc+") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::view-transition-group(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::view-transition-new(*),::view-transition-old(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::view-transition-old(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::view-transition-new(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::view-transition-new(root),::view-transition-old(root){animation-timing-function:linear}::view-transition-new(__bespoke_marp_transition_osc__),::view-transition-old(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::view-transition-new(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::view-transition-group(*),.bespoke-marp-transition-warming-up::view-transition-new(*),.bespoke-marp-transition-warming-up::view-transition-old(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;interactivity:inert;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{view-transition-name:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;interactivity:auto;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{view-transition-name:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{inset:0;position:absolute}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{background:#000000a6;border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;view-transition-name:__bespoke_marp_transition_osc__;white-space:nowrap;will-change:transform;z-index:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:where(*),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:where(*){margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:where(*):where(:first-child),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:where(*):where(:first-child){margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=overview],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=overview],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+:where(.bespoke-marp-parent){top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:#0000}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container :where(.bespoke-marp-parent){grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container :where(.bespoke-marp-parent) :where(svg.bespoke-marp-slide){height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container :where(.bespoke-marp-parent) :where(svg.bespoke-marp-slide).bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:#0000;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;interactivity:inert;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{display:block;inset:0;position:absolute}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:#000000a6;border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;white-space:pre-wrap;width:calc(100% - 40px);word-wrap:break-word;scrollbar-color:#eeeeee80 #0000;scrollbar-width:thin}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:#0000}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:#eeeeee80;border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}body[data-bespoke-view=overview]{background:#161616;overflow:auto}body[data-bespoke-view=overview] [data-bespoke-marp-fragment=inactive]{visibility:visible}body[data-bespoke-view=overview] .bespoke-marp-overview-header{backdrop-filter:blur(4px);background:#222222d9;box-shadow:0 3px 10px #00000080;box-sizing:border-box;display:flex;height:48px;inset:0 0 auto;justify-content:flex-end;padding:10px;position:fixed;z-index:1}body[data-bespoke-view=overview] button.bespoke-marp-overview-close{height:28px;line-height:28px;transform:rotate(45deg);width:28px}body[data-bespoke-view=overview] .bespoke-marp-parent{display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(0,240px));justify-content:space-around;padding:30px}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide{--bov-selected:#0000;--bov-focus:#161616;--bov-focus-outline:#0000;background-image:conic-gradient(#161616 0 0),conic-gradient(var(--bov-focus) 0 0),conic-gradient(var(--bov-focus-outline) 0 0),conic-gradient(var(--bov-selected) 0 0);background-position:5px 5px,3px 3px,2px 2px,0 0;background-repeat:no-repeat;background-size:calc(100% - 10px) calc(100% - 10px),calc(100% - 6px) calc(100% - 6px),calc(100% - 4px) calc(100% - 4px),100% 100%;content-visibility:visible;cursor:pointer;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));margin:-6px;padding:6px;interactivity:auto;opacity:1;outline:0;pointer-events:auto;scroll-margin-block:30px;width:100%;z-index:0}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide *,body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active *{pointer-events:none;interactivity:inert}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:active,body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:focus-visible,body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:hover{--bov-focus-outline:#161616}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:focus-visible,body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:hover{--bov-focus:#999}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:active{--bov-focus:#eee}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{--bov-selected:#0288d1}body[data-bespoke-view=overview]:has(.bespoke-marp-overview-header) .bespoke-marp-parent{padding-top:78px}body[data-bespoke-view=overview]:has(.bespoke-marp-overview-header) .bespoke-marp-parent svg.bespoke-marp-slide{scroll-margin-top:78px}.bespoke-marp-overview{background:#000000a6;inset:0;opacity:0;pointer-events:none;position:fixed;transition:opacity .1s ease;z-index:10}.bespoke-marp-overview iframe{background:#222;border:0;display:block;height:100%;left:0;position:absolute;top:0;width:100%}.bespoke-marp-overview[data-open="1"]{opacity:1;pointer-events:auto}}@media print{.bespoke-marp-overview,.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>div#\:\$p > svg > foreignObject > section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center;-webkit-text-size-adjust:100%;text-size-adjust:100%}div#\:\$p > svg > foreignObject > section::after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#\:\$p > svg > foreignObject > section:not([data-marpit-pagination])::after{display:none}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){font-size:2em;margin-block:0.67em}div#\:\$p > svg > foreignObject > section video::-webkit-media-controls{will-change:transform}@page {size:1280px 720px;margin:0}@media print{html, body{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#\:\$p > svg > foreignObject > section{page-break-before:always;break-before:page}div#\:\$p > svg > foreignObject > section, div#\:\$p > svg > foreignObject > section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;print-color-adjust:exact!important;transition:none!important}div#\:\$p > svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#\:\$p > svg > foreignObject > :where(section){container-type:size}div#\:\$p > svg > foreignObject > section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}div#\:\$p > svg > foreignObject > section{--fgColor-danger:light-dark(#d1242f, #f85149);--bgColor-attention-muted:light-dark(#fff8c5, #bb800926);--bgColor-muted:light-dark(#f6f8fa, #151b23);--bgColor-neutral-muted:light-dark(#818b981f, #656c7633);--borderColor-accent-emphasis:light-dark(#0969da, #1f6feb);--borderColor-attention-emphasis:light-dark(#9a6700, #9e6a03);--borderColor-danger-emphasis:light-dark(#cf222e, #da3633);--borderColor-default:light-dark(#d1d9e0, #3d444d);--borderColor-done-emphasis:light-dark(#8250df, #8957e5);--borderColor-success-emphasis:light-dark(#1a7f37, #238636);--color-prettylights-syntax-brackethighlighter-angle:light-dark(#59636e, #9198a1);--color-prettylights-syntax-brackethighlighter-unmatched:light-dark(#82071e, #f85149);--color-prettylights-syntax-carriage-return-bg:light-dark(#cf222e, #b62324);--color-prettylights-syntax-carriage-return-text:light-dark(#f6f8fa, #f0f6fc);--color-prettylights-syntax-comment:light-dark(#59636e, #9198a1);--color-prettylights-syntax-constant:light-dark(#0550ae, #79c0ff);--color-prettylights-syntax-constant-other-reference-link:light-dark(#0a3069, #a5d6ff);--color-prettylights-syntax-entity:light-dark(#6639ba, #d2a8ff);--color-prettylights-syntax-entity-tag:light-dark(#0550ae, #7ee787);--color-prettylights-syntax-invalid-illegal-text:light-dark(var(--fgColor-danger), var(--fgColor-danger));--color-prettylights-syntax-keyword:light-dark(#cf222e, #ff7b72);--color-prettylights-syntax-markup-changed-bg:light-dark(#ffd8b5, #5a1e02);--color-prettylights-syntax-markup-changed-text:light-dark(#953800, #ffdfb6);--color-prettylights-syntax-markup-deleted-bg:light-dark(#ffebe9, #67060c);--color-prettylights-syntax-markup-deleted-text:light-dark(#82071e, #ffdcd7);--color-prettylights-syntax-markup-heading:light-dark(#0550ae, #1f6feb);--color-prettylights-syntax-markup-ignored-bg:light-dark(#0550ae, #1158c7);--color-prettylights-syntax-markup-ignored-text:light-dark(#d1d9e0, #f0f6fc);--color-prettylights-syntax-markup-inserted-bg:light-dark(#dafbe1, #033a16);--color-prettylights-syntax-markup-inserted-text:light-dark(#116329, #aff5b4);--color-prettylights-syntax-markup-list:light-dark(#3b2300, #f2cc60);--color-prettylights-syntax-meta-diff-range:light-dark(#8250df, #d2a8ff);--color-prettylights-syntax-string:light-dark(#0a3069, #a5d6ff);--color-prettylights-syntax-string-regexp:light-dark(#116329, #7ee787);--color-prettylights-syntax-sublimelinter-gutter-mark:light-dark(#818b98, #3d444d);--color-prettylights-syntax-variable:light-dark(#953800, #ffa657);--fgColor-accent:light-dark(#0969da, #4493f8);--fgColor-attention:light-dark(#9a6700, #d29922);--fgColor-done:light-dark(#8250df, #ab7df8);--fgColor-muted:light-dark(#59636e, #9198a1);--fgColor-success:light-dark(#1a7f37, #3fb950);--bgColor-default:light-dark(#fff, #0d1117);--borderColor-muted:light-dark(#d1d9e0b3, #3d444db3);--color-prettylights-syntax-invalid-illegal-bg:light-dark(var(--bgColor-danger-muted), var(--bgColor-danger-muted));--color-prettylights-syntax-markup-bold:light-dark(#1f2328, #f0f6fc);--color-prettylights-syntax-markup-italic:light-dark(#1f2328, #f0f6fc);--color-prettylights-syntax-storage-modifier-import:light-dark(#1f2328, #f0f6fc);--fgColor-default:light-dark(#1f2328, #f0f6fc);--focus-outlineColor:light-dark(var(--borderColor-accent-emphasis), var(--borderColor-accent-emphasis));--borderColor-neutral-muted:light-dark(var(--borderColor-muted), var(--borderColor-muted));--base-size-16:calc(var(--marpit-root-font-size, 1rem) * 1);--base-size-24:calc(var(--marpit-root-font-size, 1rem) * 1.5);--base-size-4:calc(var(--marpit-root-font-size, 1rem) * 0.25);--base-size-40:calc(var(--marpit-root-font-size, 1rem) * 2.5);--base-size-8:calc(var(--marpit-root-font-size, 1rem) * 0.5);--base-text-weight-medium:500;--base-text-weight-normal:400;--base-text-weight-semibold:600;--fontStack-monospace:ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;--fontStack-sansSerif:-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";}/*!
+<!DOCTYPE html><html lang="C"><head><title>Monorepo PoC</title><meta property="og:title" content="Monorepo PoC"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=overview] button.bespoke-marp-overview-close,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{appearance:none;background-color:initial;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear;-webkit-tap-highlight-color:transparent}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=overview] button.bespoke-marp-overview-close:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=overview] button.bespoke-marp-overview-close:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=overview] button.bespoke-marp-overview-close:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=overview] button.bespoke-marp-overview-close:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNNDAgNzBIMjBWNTBtMjAgMEwyMCA3MG00MC00MGgyMHYyMG0tMjAgMCAyMC0yMCIgY2xhc3M9ImEiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNMjAgNTBoMjB2MjBtLTIwIDAgMjAtMjBtNDAgMEg2MFYzMG0yMCAwTDYwIDUwIiBjbGFzcz0iYSIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=overview] button.bespoke-marp-overview-close,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODBNNTIgOTBWMTAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=overview],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=overview]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4O3J4OjVweDtyeTo1cHg7d2lkdGg6MjVweDtoZWlnaHQ6MjVweH08L3N0eWxlPjwvZGVmcz48cmVjdCB4PSIyMCIgeT0iMjAiIGNsYXNzPSJhIi8+PHJlY3QgeD0iNTUiIHk9IjIwIiBjbGFzcz0iYSIvPjxyZWN0IHg9IjIwIiB5PSI1NSIgY2xhc3M9ImEiLz48cmVjdCB4PSI1NSIgeT0iNTUiIGNsYXNzPSJhIi8+PC9zdmc+") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::view-transition-group(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::view-transition-new(*),::view-transition-old(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::view-transition-old(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::view-transition-new(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::view-transition-new(root),::view-transition-old(root){animation-timing-function:linear}::view-transition-new(__bespoke_marp_transition_osc__),::view-transition-old(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::view-transition-new(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::view-transition-group(*),.bespoke-marp-transition-warming-up::view-transition-new(*),.bespoke-marp-transition-warming-up::view-transition-old(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;interactivity:inert;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{view-transition-name:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;interactivity:auto;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{view-transition-name:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{inset:0;position:absolute}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{background:#000000a6;border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;view-transition-name:__bespoke_marp_transition_osc__;white-space:nowrap;will-change:transform;z-index:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:where(*),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:where(*){margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:where(*):where(:first-child),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:where(*):where(:first-child){margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=overview],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=overview],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+:where(.bespoke-marp-parent){top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:#0000}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container :where(.bespoke-marp-parent){grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container :where(.bespoke-marp-parent) :where(svg.bespoke-marp-slide){height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container :where(.bespoke-marp-parent) :where(svg.bespoke-marp-slide).bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:#0000;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;interactivity:inert;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{display:block;inset:0;position:absolute}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:#000000a6;border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;white-space:pre-wrap;width:calc(100% - 40px);word-wrap:break-word;scrollbar-color:#eeeeee80 #0000;scrollbar-width:thin}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:#0000}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:#eeeeee80;border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page-area .bespoke-marp-presenter-info-page{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}body[data-bespoke-view=overview]{background:#161616;overflow:auto}body[data-bespoke-view=overview] [data-bespoke-marp-fragment=inactive]{visibility:visible}body[data-bespoke-view=overview] .bespoke-marp-overview-header{backdrop-filter:blur(4px);background:#222222d9;box-shadow:0 3px 10px #00000080;box-sizing:border-box;display:flex;height:48px;inset:0 0 auto;justify-content:flex-end;padding:10px;position:fixed;z-index:1}body[data-bespoke-view=overview] button.bespoke-marp-overview-close{height:28px;line-height:28px;transform:rotate(45deg);width:28px}body[data-bespoke-view=overview] .bespoke-marp-parent{display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(0,240px));justify-content:space-around;padding:30px}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide{--bov-selected:#0000;--bov-focus:#161616;--bov-focus-outline:#0000;background-image:conic-gradient(#161616 0 0),conic-gradient(var(--bov-focus) 0 0),conic-gradient(var(--bov-focus-outline) 0 0),conic-gradient(var(--bov-selected) 0 0);background-position:5px 5px,3px 3px,2px 2px,0 0;background-repeat:no-repeat;background-size:calc(100% - 10px) calc(100% - 10px),calc(100% - 6px) calc(100% - 6px),calc(100% - 4px) calc(100% - 4px),100% 100%;content-visibility:visible;cursor:pointer;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));margin:-6px;padding:6px;interactivity:auto;opacity:1;outline:0;pointer-events:auto;scroll-margin-block:30px;width:100%;z-index:0}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide *,body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active *{pointer-events:none;interactivity:inert}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:active,body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:focus-visible,body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:hover{--bov-focus-outline:#161616}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:focus-visible,body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:hover{--bov-focus:#999}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide:active{--bov-focus:#eee}body[data-bespoke-view=overview] .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{--bov-selected:#0288d1}body[data-bespoke-view=overview]:has(.bespoke-marp-overview-header) .bespoke-marp-parent{padding-top:78px}body[data-bespoke-view=overview]:has(.bespoke-marp-overview-header) .bespoke-marp-parent svg.bespoke-marp-slide{scroll-margin-top:78px}.bespoke-marp-overview{background:#000000a6;inset:0;opacity:0;pointer-events:none;position:fixed;transition:opacity .1s ease;z-index:10}.bespoke-marp-overview iframe{background:#222;border:0;display:block;height:100%;left:0;position:absolute;top:0;width:100%}.bespoke-marp-overview[data-open="1"]{opacity:1;pointer-events:auto}}@media print{.bespoke-marp-overview,.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>div#\:\$p > svg > foreignObject > section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center;-webkit-text-size-adjust:100%;text-size-adjust:100%}div#\:\$p > svg > foreignObject > section::after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#\:\$p > svg > foreignObject > section:not([data-marpit-pagination])::after{display:none}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){font-size:2em;margin-block:0.67em}div#\:\$p > svg > foreignObject > section video::-webkit-media-controls{will-change:transform}@page {size:1280px 720px;margin:0}@media print{html, body{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#\:\$p > svg > foreignObject > section{page-break-before:always;break-before:page}div#\:\$p > svg > foreignObject > section, div#\:\$p > svg > foreignObject > section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;print-color-adjust:exact!important;transition:none!important}div#\:\$p > svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#\:\$p > svg > foreignObject > :where(section){container-type:size}div#\:\$p > svg > foreignObject > section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}div#\:\$p > svg > foreignObject > section{--fgColor-danger:light-dark(#d1242f, #f85149);--bgColor-attention-muted:light-dark(#fff8c5, #bb800926);--bgColor-muted:light-dark(#f6f8fa, #151b23);--bgColor-neutral-muted:light-dark(#818b981f, #656c7633);--borderColor-accent-emphasis:light-dark(#0969da, #1f6feb);--borderColor-attention-emphasis:light-dark(#9a6700, #9e6a03);--borderColor-danger-emphasis:light-dark(#cf222e, #da3633);--borderColor-default:light-dark(#d1d9e0, #3d444d);--borderColor-done-emphasis:light-dark(#8250df, #8957e5);--borderColor-success-emphasis:light-dark(#1a7f37, #238636);--color-prettylights-syntax-brackethighlighter-angle:light-dark(#59636e, #9198a1);--color-prettylights-syntax-brackethighlighter-unmatched:light-dark(#82071e, #f85149);--color-prettylights-syntax-carriage-return-bg:light-dark(#cf222e, #b62324);--color-prettylights-syntax-carriage-return-text:light-dark(#f6f8fa, #f0f6fc);--color-prettylights-syntax-comment:light-dark(#59636e, #9198a1);--color-prettylights-syntax-constant:light-dark(#0550ae, #79c0ff);--color-prettylights-syntax-constant-other-reference-link:light-dark(#0a3069, #a5d6ff);--color-prettylights-syntax-entity:light-dark(#6639ba, #d2a8ff);--color-prettylights-syntax-entity-tag:light-dark(#0550ae, #7ee787);--color-prettylights-syntax-invalid-illegal-text:light-dark(var(--fgColor-danger), var(--fgColor-danger));--color-prettylights-syntax-keyword:light-dark(#cf222e, #ff7b72);--color-prettylights-syntax-markup-changed-bg:light-dark(#ffd8b5, #5a1e02);--color-prettylights-syntax-markup-changed-text:light-dark(#953800, #ffdfb6);--color-prettylights-syntax-markup-deleted-bg:light-dark(#ffebe9, #67060c);--color-prettylights-syntax-markup-deleted-text:light-dark(#82071e, #ffdcd7);--color-prettylights-syntax-markup-heading:light-dark(#0550ae, #1f6feb);--color-prettylights-syntax-markup-ignored-bg:light-dark(#0550ae, #1158c7);--color-prettylights-syntax-markup-ignored-text:light-dark(#d1d9e0, #f0f6fc);--color-prettylights-syntax-markup-inserted-bg:light-dark(#dafbe1, #033a16);--color-prettylights-syntax-markup-inserted-text:light-dark(#116329, #aff5b4);--color-prettylights-syntax-markup-list:light-dark(#3b2300, #f2cc60);--color-prettylights-syntax-meta-diff-range:light-dark(#8250df, #d2a8ff);--color-prettylights-syntax-string:light-dark(#0a3069, #a5d6ff);--color-prettylights-syntax-string-regexp:light-dark(#116329, #7ee787);--color-prettylights-syntax-sublimelinter-gutter-mark:light-dark(#818b98, #3d444d);--color-prettylights-syntax-variable:light-dark(#953800, #ffa657);--fgColor-accent:light-dark(#0969da, #4493f8);--fgColor-attention:light-dark(#9a6700, #d29922);--fgColor-done:light-dark(#8250df, #ab7df8);--fgColor-muted:light-dark(#59636e, #9198a1);--fgColor-success:light-dark(#1a7f37, #3fb950);--bgColor-default:light-dark(#fff, #0d1117);--borderColor-muted:light-dark(#d1d9e0b3, #3d444db3);--color-prettylights-syntax-invalid-illegal-bg:light-dark(var(--bgColor-danger-muted), var(--bgColor-danger-muted));--color-prettylights-syntax-markup-bold:light-dark(#1f2328, #f0f6fc);--color-prettylights-syntax-markup-italic:light-dark(#1f2328, #f0f6fc);--color-prettylights-syntax-storage-modifier-import:light-dark(#1f2328, #f0f6fc);--fgColor-default:light-dark(#1f2328, #f0f6fc);--focus-outlineColor:light-dark(var(--borderColor-accent-emphasis), var(--borderColor-accent-emphasis));--borderColor-neutral-muted:light-dark(var(--borderColor-muted), var(--borderColor-muted));--base-size-16:calc(var(--marpit-root-font-size, 1rem) * 1);--base-size-24:calc(var(--marpit-root-font-size, 1rem) * 1.5);--base-size-4:calc(var(--marpit-root-font-size, 1rem) * 0.25);--base-size-40:calc(var(--marpit-root-font-size, 1rem) * 2.5);--base-size-8:calc(var(--marpit-root-font-size, 1rem) * 0.5);--base-text-weight-medium:500;--base-text-weight-normal:400;--base-text-weight-semibold:600;--fontStack-monospace:ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;--fontStack-sansSerif:-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";}/*!
  * Marp default theme.
  *
  * @theme default
@@ -16,9 +16,9 @@
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="the-point-of-abstractions">The Point of Abstractions</h1>
-<h2 id="or-how-to-make-things-easy-to-change">Or: How to Make Things Easy to Change</h2>
+;" data-marpit-pagination-total="16">
+<h1 id="monorepo-poc">Monorepo PoC</h1>
+<h2 id="fra-spredte-snapshots-til-deterministiske-bygg">Fra spredte SNAPSHOTs til deterministiske bygg</h2>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -29,17 +29,12 @@
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="agenda">Agenda</h1>
-<ul>
-<li><strong>Why abstractions?</strong> ETC – Easy To Change</li>
-<li><strong>The domain model:</strong> Types as documentation</li>
-<li><strong>Parse, don't validate:</strong> Correctness at the boundary</li>
-<li><strong>Ports:</strong> Contracts, not implementations</li>
-<li><strong>Use cases:</strong> One job, no downstream dependencies</li>
-<li><strong>Adapters:</strong> The things that do the actual work</li>
-<li><strong>The payoff:</strong> From V1 to V2</li>
-</ul>
+;" data-marpit-pagination-total="16">
+<h1 id="kontekst">Kontekst</h1>
+<p>Dette er siste dag min på Lovdata. Jeg gir dere et problem og et forslag.</p>
+<p><strong>Problemet:</strong> Backend-bygget er ikke-deterministisk.</p>
+<p><strong>Forslaget:</strong> Samle alt i ett monorepo med pinned versjoner.</p>
+<p><strong>Advarsel:</strong> Dette er et PoC. Det er dristig. Men det er riktig.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -50,21 +45,18 @@
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="why-abstractions">Why abstractions?</h1>
-<h2 id="not-for-fun-because-things-change">Not for fun. Because things change</h2>
-<blockquote>
-<p><em>&quot;ETC – Easy To Change. That's it. As far as we can tell,<br />
-every design principle out there is a special case of ETC.&quot;</em><br />
-— The Pragmatic Programmer</p>
-</blockquote>
+;" data-marpit-pagination-total="16">
+<h1 id="n%C3%A5v%C3%A6rende-struktur">Nåværende struktur</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>lovdata-main      (repo 1) ─┐
+lovdata-objects   (repo 2) ─┤──► lovdata-pro-v2 (repo 4)
+lovdata-services  (repo 3) ─┘
+</code></pre>
+<p>Fire repoer. Fire ulike commit-historikker. <strong>Ingen garantert sammenheng.</strong></p>
 <ul>
-<li><img class="emoji" draggable="false" alt="🔄" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f504.svg" data-marp-twemoji=""/> Requirements change (always)</li>
-<li><img class="emoji" draggable="false" alt="🧪" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f9ea.svg" data-marp-twemoji=""/> We need to test things in isolation</li>
-<li><img class="emoji" draggable="false" alt="🛡️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f6e1.svg" data-marp-twemoji=""/> We need to swap out parts without tearing down the whole thing</li>
+<li>En endring i <code>objects</code> krever: commit → push → deploy til Nexus → rebuild</li>
+<li>En CI-pipeline er en serie <em>antakelser</em>, ikke <em>fakta</em></li>
+<li>Umulig å svare på: <em>&quot;Hva kjørte vi i prod 3. januar?&quot;</em></li>
 </ul>
-<p><strong>The question isn't &quot;do we need abstraction?&quot;</strong><br />
-<strong>The question is &quot;does this abstraction make the code easier to change?&quot;</strong></p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -75,23 +67,12 @@ every design principle out there is a special case of ETC.&quot;</em><br />
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="the-domain-model-v1-vs-v2">The domain model: V1 vs V2</h1>
-<h2 id="v1-flat-and-implicit">V1: Flat and implicit</h2>
-<ul>
-<li>No <code>Conversation</code> model – just flat JSON blobs in the database</li>
-<li>Errors caught only at the route level</li>
-<li><code>NetworkError(throwable)</code> as a catch-all</li>
-</ul>
-<h2 id="v2-explicit-and-typed">V2: Explicit and typed</h2>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Conversation</span>(
-    <span class="hljs-keyword">val</span> id: String,
-    <span class="hljs-keyword">val</span> name: String,
-    <span class="hljs-keyword">val</span> messages: List&lt;MessageV2&gt;,
-    <span class="hljs-keyword">val</span> selectionID: String? = <span class="hljs-literal">null</span>
-)
+;" data-marpit-pagination-total="16">
+<h1 id="problemet-i-%C3%A9n-linje">Problemet i én linje</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
 </code></pre>
-<p>The conversation is a first-class citizen in the domain.</p>
+<p>Dette er ikke en versjon.</p>
+<p>Dette er et løfte om at <em>noen</em> vil levere <em>noe</em> – på et <em>tidspunkt</em>.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -102,29 +83,28 @@ every design principle out there is a special case of ETC.&quot;</em><br />
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="parse-dont-validate">Parse, don't validate</h1>
-<p>Enforce correctness <strong>at the boundary</strong> — then trust your types everywhere else.</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">CreateConversationRequest</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">constructor</span>(
-    <span class="hljs-keyword">val</span> query: String,
-    <span class="hljs-keyword">val</span> selectionID: String? = <span class="hljs-literal">null</span>
-) {
-    <span class="hljs-keyword">companion</span> <span class="hljs-keyword">object</span> {
-        <span class="hljs-keyword">operator</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">invoke</span><span class="hljs-params">(query: <span class="hljs-type">String</span>, selectionID: <span class="hljs-type">String</span>? = <span class="hljs-literal">null</span>)</span></span> =
-            CreateConversationRequest(query = query.sanitized(), selectionID = selectionID)
-    }
-}
+;" data-marpit-pagination-total="16">
+<h1 id="hva-betyr-egentlig-snapshot">Hva betyr egentlig <code>SNAPSHOT</code>?</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">parent</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>no.lovdata<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>lovdata-main<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>  <span class="hljs-comment">&lt;!-- ← hvilket bygg? --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">parent</span>&gt;</span>
 
-<span class="hljs-keyword">sealed</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MessageV2</span> {
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">User</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">constructor</span>(<span class="hljs-keyword">val</span> query: String) : MessageV2() {
-        <span class="hljs-keyword">companion</span> <span class="hljs-keyword">object</span> {
-            <span class="hljs-keyword">operator</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">invoke</span><span class="hljs-params">(query: <span class="hljs-type">String</span>)</span></span> = User(query = query.sanitized())
-        }
-    }
-    <span class="hljs-comment">// ...</span>
-}
+<span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>no.lovdata<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>lovdata-objects<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- versjon arves → 1.0.0-SNAPSHOT --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>no.lovdata<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>lovdata-services<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- versjon arves → 1.0.0-SNAPSHOT --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>
 </code></pre>
-<p>Private constructor + <code>operator fun invoke</code> = <strong>impossible to create without parsing</strong></p>
+<p>Maven henter <strong>nyeste tilgjengelige</strong> SNAPSHOT fra Nexus – ikke den du brukte sist.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -135,20 +115,17 @@ every design principle out there is a special case of ETC.&quot;</em><br />
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="parsing-at-the-http-boundary">Parsing at the HTTP boundary</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">private</span> <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">CreateChatRequestDTO</span>(<span class="hljs-keyword">val</span> query: String, ...) {
-    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">toDomain</span><span class="hljs-params">()</span></span>: Either&lt;RouteError, CreateConversationRequest&gt; =
-        either {
-            ensure(query.isNotEmpty()) { RouteError.BadRequest(<span class="hljs-string">&quot;...&quot;</span>) }
-            ensure(query.toByteArray().size &lt;= MAX_QUERY_SIZE) { RouteError.BadRequest(<span class="hljs-string">&quot;...&quot;</span>) }
-            CreateConversationRequest(query = query, selectionID = selectionID)
-        }
-}
+;" data-marpit-pagination-total="16">
+<h1 id="den-reelle-konsekvensen">Den reelle konsekvensen</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>commit abc123  ←  &quot;Fiks søkefeil&quot;
 </code></pre>
-<p>Raw input comes in as a DTO → validated and parsed into a domain type → or rejected.</p>
-<p>Once you have a <code>CreateConversationRequest</code>, it's <strong>guaranteed valid</strong>.<br />
-No defensive checks deeper in the stack. No &quot;just in case&quot; validation.</p>
+<p>Bygd mandag: <code>lovdata-services 1.0.0-SNAPSHOT</code> @ hash <code>a1b2c3</code><br />
+Bygd tirsdag: <code>lovdata-services 1.0.0-SNAPSHOT</code> @ hash <code>d4e5f6</code></p>
+<p>To forskjellige artifakter. Samme commit-SHA.</p>
+<p><strong>Du kan ikke reprodusere et bygg.</strong><br />
+<strong>Du kan ikke bisecte en feil.</strong><br />
+<strong>Du kan ikke stole på CI-loggen.</strong></p>
+<p>Sporbarheten er ikke redusert – den er eliminert.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -159,20 +136,21 @@ No defensive checks deeper in the stack. No &quot;just in case&quot; validation.
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="sealed-classes-making-invalid-states-impossible">Sealed classes: Making invalid states impossible</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">sealed</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MessageV2</span> {
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">User</span>(<span class="hljs-keyword">val</span> query: String) : MessageV2()
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">System</span>(
-        <span class="hljs-keyword">val</span> response: XHtml.Node,
-        <span class="hljs-keyword">val</span> relevantDocuments: List&lt;RelevantDocument&gt;
-    ) : MessageV2()
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Error</span>(<span class="hljs-keyword">val</span> message: String) : MessageV2()
-}
+;" data-marpit-pagination-total="16">
+<h1 id="making-impossible-states-impossible-%E2%80%93-p%C3%A5-build-niv%C3%A5">&quot;Making impossible states impossible&quot; – på build-nivå</h1>
+<p>I kode vet vi dette er feil:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-comment">// Feil: streng kan være hva som helst</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">processDocument</span><span class="hljs-params">(version: <span class="hljs-type">String</span>)</span></span> { ... }
+
+<span class="hljs-comment">// Riktig: typen utelukker ugyldige tilstander</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">processDocument</span><span class="hljs-params">(version: <span class="hljs-type">SemanticVersion</span>)</span></span> { ... }
 </code></pre>
-<p>A message is <strong>either</strong> from the user, <strong>or</strong> from the system, <strong>or</strong> an error. Never something in between.</p>
-<p><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/2705.svg" data-marp-twemoji=""/> The compiler forces you to handle every variant<br />
-<img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/2705.svg" data-marp-twemoji=""/> New variants → compile error wherever you forgot</p>
+<p>I byggsystemet gjør vi det motsatte:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml"><span class="hljs-comment">&lt;!-- &quot;Hvilken versjon av lovdata-services?&quot; --&gt;</span>
+<span class="hljs-comment">&lt;!-- &quot;Ja.&quot; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+</code></pre>
+<p>En SNAPSHOT-versjon er <code>String</code> der vi trenger <code>SemanticVersion</code>.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -183,21 +161,22 @@ No defensive checks deeper in the stack. No &quot;just in case&quot; validation.
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="type-driven-state-machine">Type-driven state machine</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> Conversation.<span class="hljs-title">toResponse</span><span class="hljs-params">()</span></span> =
-    <span class="hljs-keyword">when</span> (<span class="hljs-keyword">this</span>.messages.lastOrNull()) {
-        <span class="hljs-literal">null</span>              -&gt; ChatResponseDTO.InitialLoading(...)
-        <span class="hljs-keyword">is</span> MessageV2.User   -&gt; ChatResponseDTO.AwaitingReply(...)
-        <span class="hljs-keyword">is</span> MessageV2.System -&gt; ChatResponseDTO.Idle(...)
-        <span class="hljs-keyword">is</span> MessageV2.Error  -&gt; ChatResponseDTO.Failed(...)
-    }
+;" data-marpit-pagination-total="16">
+<h1 id="kontrasten-elm-vet-hva-den-har">Kontrasten: Elm vet hva den har</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">&quot;dependencies&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+        <span class="hljs-attr">&quot;direct&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+            <span class="hljs-attr">&quot;elm/core&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1.0.5&quot;</span><span class="hljs-punctuation">,</span>
+            <span class="hljs-attr">&quot;elm/html&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1.0.0&quot;</span><span class="hljs-punctuation">,</span>
+            <span class="hljs-attr">&quot;elm/json&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1.1.3&quot;</span>
+        <span class="hljs-punctuation">}</span>
+    <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
 </code></pre>
-<p>No boolean flags. No <code>state: String</code>. Just types.</p>
-<ul>
-<li><img class="emoji" draggable="false" alt="⚠️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/26a0.svg" data-marp-twemoji=""/> V1: Frontend had to guess state based on JSON fields</li>
-<li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/2705.svg" data-marp-twemoji=""/> V2: State is <strong>unambiguous</strong> – it follows from the last message</li>
-</ul>
+<p>Prøv å introdusere en SNAPSHOT i <code>elm.json</code>. Det går ikke. Kompilatoren nekter.</p>
+<p>Elm-frontenden er deterministisk av design.<br />
+Backend-en vår er ikke-deterministisk av vane.</p>
+<p><strong>Samme commit. Samme maskin. Samme dag. Elm gir alltid samme resultat. Maven gjør ikke det.</strong></p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -208,37 +187,60 @@ No defensive checks deeper in the stack. No &quot;just in case&quot; validation.
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="honest-error-handling">Honest error handling</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">sealed</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">AISearchErrorV2</span> {
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Validation</span>(<span class="hljs-keyword">val</span> message: String) : AISearchErrorV2
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NotFound</span>(<span class="hljs-keyword">val</span> message: String) : AISearchErrorV2
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">object</span> RateLimited : AISearchErrorV2
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ServiceUnavailable</span>(...) : AISearchErrorV2
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Timeout</span>(...) : AISearchErrorV2
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">object</span> TooLargeHeader : AISearchErrorV2
-    <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Internal</span>(...) : AISearchErrorV2
-}
+;" data-marpit-pagination-total="16">
+<h1 id="l%C3%B8sningen-monorepo">Løsningen: Monorepo</h1>
+<blockquote>
+<p>&quot;If you can't reproduce a build from a single commit,<br />
+you don't have a build — you have a wish.&quot;</p>
+</blockquote>
+<p><strong>Prinsippet:</strong> Én git-commit = én komplett sannhet.</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>lovdata/
+├── pom.xml                   ← parent POM, eier det hele
+├── lovdata-objects/
+│   ├── pom.xml
+│   └── src/
+├── lovdata-services/
+│   ├── pom.xml
+│   └── src/
+└── lovdata-pro-v2/
+    ├── pom.xml
+    └── src/
 </code></pre>
-<p><strong>V1:</strong> <code>NetworkError(throwable)</code> – what actually went wrong?<br />
-<strong>V2:</strong> Every error type is explicit – the code <em>tells</em> you what can happen</p>
-<p><img class="emoji" draggable="false" alt="🛡️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f6e1.svg" data-marp-twemoji=""/> <code>Either&lt;AISearchErrorV2, T&gt;</code> — functions that don't lie</p>
+<p>Ingen SNAPSHOT-avhengigheter på tvers – alt er lokale modulreferanser.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-class="lead" data-theme="default" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
   overflow: auto;
   font-size: 0.9rem;
 }
-" lang="C" class="lead" data-marpit-pagination="10" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--class:lead;--theme:default;--style:section {
+" lang="C" data-marpit-pagination="10" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="%F0%9F%94%8C-ports"><img class="emoji" draggable="false" alt="🔌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f50c.svg" data-marp-twemoji=""/> Ports</h1>
-<blockquote>
-<p>A port is a <strong>contract</strong> — an interface that defines<br />
-<em>what</em> the system needs, not <em>how</em> it's done.</p>
-</blockquote>
+;" data-marpit-pagination-total="16">
+<h1 id="maven-multi-module-parent-pom">Maven Multi-Module: Parent POM</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml"><span class="hljs-comment">&lt;!-- pom.xml (rot) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">project</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>no.lovdata<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>lovdata-parent<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">packaging</span>&gt;</span>pom<span class="hljs-tag">&lt;/<span class="hljs-name">packaging</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">modules</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">module</span>&gt;</span>lovdata-objects<span class="hljs-tag">&lt;/<span class="hljs-name">module</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">module</span>&gt;</span>lovdata-services<span class="hljs-tag">&lt;/<span class="hljs-name">module</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">module</span>&gt;</span>lovdata-pro-v2<span class="hljs-tag">&lt;/<span class="hljs-name">module</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">modules</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">project</span>&gt;</span>
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml"><span class="hljs-comment">&lt;!-- lovdata-pro-v2/pom.xml --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>no.lovdata<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>lovdata-objects<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${project.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>  <span class="hljs-comment">&lt;!-- løses lokalt, ikke fra Nexus --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p>Maven løser avhengighetene <strong>lokalt i samme bygg</strong>. Ingen Nexus-rundtur.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -249,20 +251,29 @@ No defensive checks deeper in the stack. No &quot;just in case&quot; validation.
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="llmport">LLMPort</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">LLMPort</span> {
-    <span class="hljs-keyword">suspend</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">chat</span><span class="hljs-params">(
-        userID: <span class="hljs-type">Int</span>,
-        conversation: <span class="hljs-type">Conversation</span>
-    )</span></span>: Either&lt;AISearchErrorV2, Conversation&gt;
+;" data-marpit-pagination-total="16">
+<h1 id="alternativt-gradle-med-version-catalogs">Alternativt: Gradle med Version Catalogs</h1>
+<p><code>gradle/libs.versions.toml</code> – ett sted for alle versjoner:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-toml"><span class="hljs-section">[versions]</span>
+<span class="hljs-attr">kotlin</span> = <span class="hljs-string">&quot;2.0.21&quot;</span>
+<span class="hljs-attr">ktor</span> = <span class="hljs-string">&quot;3.0.3&quot;</span>
+<span class="hljs-attr">coroutines</span> = <span class="hljs-string">&quot;1.9.0&quot;</span>
+
+<span class="hljs-section">[libraries]</span>
+<span class="hljs-attr">ktor-server-core</span> = { module = <span class="hljs-string">&quot;io.ktor:ktor-server-core&quot;</span>, version.ref = <span class="hljs-string">&quot;ktor&quot;</span> }
+<span class="hljs-attr">ktor-server-netty</span> = { module = <span class="hljs-string">&quot;io.ktor:ktor-server-netty&quot;</span>, version.ref = <span class="hljs-string">&quot;ktor&quot;</span> }
+<span class="hljs-attr">kotlinx-coroutines</span> = { module = <span class="hljs-string">&quot;org.jetbrains.kotlinx:kotlinx-coroutines-core&quot;</span>, version.ref = <span class="hljs-string">&quot;coroutines&quot;</span> }
+
+<span class="hljs-section">[bundles]</span>
+<span class="hljs-attr">ktor</span> = [<span class="hljs-string">&quot;ktor-server-core&quot;</span>, <span class="hljs-string">&quot;ktor-server-netty&quot;</span>]
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-comment">// build.gradle.kts</span>
+dependencies {
+    implementation(libs.bundles.ktor)
+    implementation(libs.kotlinx.coroutines)
 }
 </code></pre>
-<p>That's the whole thing.</p>
-<ul>
-<li>No HTTP clients, no JSON parsing, no retry logic</li>
-<li>Just: &quot;give me a conversation back, or an error&quot;</li>
-</ul>
+<p>Én PR for å bumpe en versjon. Diff er tydelig. CI er deterministisk.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -273,44 +284,86 @@ No defensive checks deeper in the stack. No &quot;just in case&quot; validation.
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="cacheport">CachePort</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">CachePort</span> {
-    <span class="hljs-keyword">suspend</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">createConversation</span><span class="hljs-params">(
-        userID: <span class="hljs-type">Int</span>, query: <span class="hljs-type">String</span>, selectionID: <span class="hljs-type">String</span>?
-    )</span></span>: Either&lt;AISearchErrorV2, Conversation&gt;
-
-    <span class="hljs-keyword">suspend</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getConversation</span><span class="hljs-params">(
-        userID: <span class="hljs-type">Int</span>, conversationID: <span class="hljs-type">String</span>
-    )</span></span>: Either&lt;AISearchErrorV2, Conversation&gt;
-
-    <span class="hljs-keyword">suspend</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateConversation</span><span class="hljs-params">(
-        userID: <span class="hljs-type">Int</span>, conversation: <span class="hljs-type">Conversation</span>
-    )</span></span>: Either&lt;AISearchErrorV2, <span class="hljs-built_in">Unit</span>&gt;
-
-    <span class="hljs-keyword">suspend</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">deleteConversation</span><span class="hljs-params">(
-        userID: <span class="hljs-type">Int</span>, conversationID: <span class="hljs-type">String</span>
-    )</span></span>: Either&lt;AISearchErrorV2, <span class="hljs-built_in">Unit</span>&gt;
-    <span class="hljs-comment">// + list operations</span>
-}
+;" data-marpit-pagination-total="16">
+<h1 id="maven-enforcer-h%C3%A5ndhev-det-maskinelt">Maven Enforcer: Håndhev det maskinelt</h1>
+<p>Beholder Maven, men sperrer SNAPSHOTs i produksjonsbygg:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">plugin</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>maven-enforcer-plugin<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">configuration</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">rules</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">requireReleaseDeps</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">onlyWhenRelease</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">onlyWhenRelease</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">message</span>&gt;</span>SNAPSHOTs er ikke tillatt i produksjonsbygg<span class="hljs-tag">&lt;/<span class="hljs-name">message</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">requireReleaseDeps</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">rules</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">configuration</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">plugin</span>&gt;</span>
 </code></pre>
-<p><img class="emoji" draggable="false" alt="📦" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f4e6.svg" data-marp-twemoji=""/> CRUD contract for conversations — the implementation can be anything</p>
+<p>Og ekstern BOM for JetBrains-familien:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>io.ktor<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>ktor-bom<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.0.3<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>  <span class="hljs-comment">&lt;!-- aldri SNAPSHOT --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>pom<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>import<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-class="lead" data-theme="default" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
   overflow: auto;
   font-size: 0.9rem;
 }
-" lang="C" class="lead" data-marpit-pagination="13" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--class:lead;--theme:default;--style:section {
+" lang="C" data-marpit-pagination="13" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="%E2%9A%99%EF%B8%8F-use-cases"><img class="emoji" draggable="false" alt="⚙️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/2699.svg" data-marp-twemoji=""/> Use cases</h1>
-<blockquote>
-<p>A use case does <strong>one thing</strong>.<br />
-It knows only ports — never concrete implementations.</p>
-</blockquote>
+;" data-marpit-pagination-total="16">
+<h1 id="gevinster">Gevinster</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>I dag</th>
+<th>Monorepo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reproduserbart bygg?</td>
+<td>Nei</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>Atomiske commits?</td>
+<td>Nei</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>Rollback én operasjon?</td>
+<td>Nei</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td>Bisectable CI-feil?</td>
+<td>Vanskelig</td>
+<td>Enkelt</td>
+</tr>
+<tr>
+<td>&quot;Hva kjørte vi i prod?&quot;</td>
+<td>Gjetning</td>
+<td><code>git log</code></td>
+</tr>
+<tr>
+<td>PR-diff lesbar?</td>
+<td>Ikke alltid</td>
+<td>Alltid</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Atomiske commits:</strong> Én PR endrer <code>objects</code> og <code>pro-v2</code> samtidig – de er alltid i sync.</p>
+<p><strong>Rollback:</strong> <code>git revert &lt;sha&gt;</code> – én operasjon, hele systemet tilbake.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -321,30 +374,17 @@ It knows only ports — never concrete implementations.</p>
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="postmessage">PostMessage</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">class</span> <span class="hljs-title class_">PostMessage</span>(
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> llmPort: LLMPort,
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> cachePort: CachePort,
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> serverEventEmitter: ServerEventEmitter,
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> coroutinePool: CoroutinePool
-) {
-    <span class="hljs-keyword">suspend</span> <span class="hljs-keyword">operator</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">invoke</span><span class="hljs-params">(
-        userID: <span class="hljs-type">Int</span>, sessionId: <span class="hljs-type">String</span>,
-        conversationID: <span class="hljs-type">String</span>, query: <span class="hljs-type">String</span>
-    )</span></span>: Either&lt;AISearchErrorV2, Conversation&gt; =
-        either {
-            <span class="hljs-keyword">val</span> conversation =
-                cachePort.getConversation(userID, conversationID).bind()
-                    .dropErrors()
-                    .withMessage(MessageV2.User(query))
-                    .also { cachePort.updateConversation(userID, it).bind() }
-
-            coroutinePool.launch { <span class="hljs-comment">/* LLM call in the background */</span> }
-            conversation
-        }
-}
-</code></pre>
+;" data-marpit-pagination-total="16">
+<h1 id="hva-er-risikoen">Hva er risikoen?</h1>
+<p><strong>Migrering tar tid</strong> — men SNAPSHOT-problemet forsvinner ikke av seg selv.</p>
+<p><strong>Større repo</strong> — men verktøy som <code>mvn -pl lovdata-pro-v2</code> bygger bare det du trenger.</p>
+<p><strong>Mer koordinering i PR-er</strong> — men langt mindre enn å koordinere på tvers av 4 repoer.</p>
+<blockquote>
+<p>&quot;The goal of software architecture is to minimize the human resources<br />
+required to build and maintain the required system.&quot;<br />
+— Robert C. Martin, Clean Architecture</p>
+</blockquote>
+<p>Å jage SNAPSHOTs på tvers av 4 repoer er akkurat det motsatte.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
@@ -355,256 +395,33 @@ It knows only ports — never concrete implementations.</p>
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="what-happens-in-postmessage">What happens in PostMessage?</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>1. <img class="emoji" draggable="false" alt="📥" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f4e5.svg" data-marp-twemoji=""/>  Fetch conversation from cache     (CachePort)
-2. <img class="emoji" draggable="false" alt="💬" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f4ac.svg" data-marp-twemoji=""/>  Append the user's message
-3. <img class="emoji" draggable="false" alt="💾" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f4be.svg" data-marp-twemoji=""/>  Save updated conversation          (CachePort)
-4. <img class="emoji" draggable="false" alt="🚀" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f680.svg" data-marp-twemoji=""/>  Fire off LLM call in background   (LLMPort + CoroutinePool)
-5. <img class="emoji" draggable="false" alt="↩" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/21a9.svg" data-marp-twemoji=""/>  Return conversation immediately
-</code></pre>
-<p>The use case <strong>orchestrates</strong> — it doesn't know if cache is Postgres or a <code>HashMap</code>,<br />
-or if the LLM is the Lovdata API or a mock.</p>
+;" data-marpit-pagination-total="16">
+<h1 id="poc-forslaget">PoC-forslaget</h1>
+<ol>
+<li><strong>Flytt</strong> <code>lovdata-main</code>, <code>lovdata-objects</code>, <code>lovdata-services</code> og <code>lovdata-pro-v2</code> til én repo</li>
+<li><strong>Gjør om</strong> til Maven multi-module med lokal modul-resolving</li>
+<li><strong>Legg til</strong> Maven Enforcer som blokkerer SNAPSHOTs i CI</li>
+<li><strong>Verifiser</strong> med én <code>mvn clean install</code> at alt er grønt</li>
+</ol>
+<p>Dette er ikke en stor omskrivning. Det er en restrukturering.</p>
+<p>Koden er den samme. Byggepipelinen blir ærlig.</p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-class="lead" data-theme="default" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
   overflow: auto;
   font-size: 0.9rem;
 }
-" lang="C" class="lead" data-marpit-pagination="16" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--class:lead;--theme:default;--style:section {
+" lang="C" data-marpit-pagination="16" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
   overflow: auto;
   font-size: 0.9rem;
 }
-;" data-marpit-pagination-total="25">
-<h1 id="%F0%9F%94%97-wiring"><img class="emoji" draggable="false" alt="🔗" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f517.svg" data-marp-twemoji=""/> Wiring</h1>
-<blockquote>
-<p>The routes wire everything together — the <strong>only place</strong><br />
-that knows which adapters are used.</p>
-</blockquote>
-<footer>Christian Ekrem – @Lovdata</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-" lang="C" data-marpit-pagination="17" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-;" data-marpit-pagination-total="25">
-<h1 id="dependency-injection-in-the-routes">Dependency injection in the routes</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">class</span> <span class="hljs-title class_">AISearchRoutesV2</span> <span class="hljs-meta">@Inject</span> <span class="hljs-keyword">constructor</span>(
-    application: Application,
-    llmPort: LLMPort,
-    cachePort: CachePort,
-    serverEventEmitter: ServerEventEmitter
-) {
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> coroutinePool = CoroutinePool(maxConcurrency = <span class="hljs-number">50</span>)
-
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> createConversation = CreateConversation(llmPort, cachePort, ...)
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> getConversation    = GetConversation(cachePort)
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> postMessage        = PostMessage(llmPort, cachePort, ...)
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> retryLastMessage   = RetryLastMessage(llmPort, cachePort, ...)
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> deleteConversation = DeleteConversation(cachePort)
-}
-</code></pre>
-<p><img class="emoji" draggable="false" alt="🧩" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f9e9.svg" data-marp-twemoji=""/> Each use case gets the ports it needs — done.</p>
-<footer>Christian Ekrem – @Lovdata</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-class="lead" data-theme="default" data-style="section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-" lang="C" class="lead" data-marpit-pagination="18" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--class:lead;--theme:default;--style:section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-;" data-marpit-pagination-total="25">
-<h1 id="%F0%9F%94%84-adapters"><img class="emoji" draggable="false" alt="🔄" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f504.svg" data-marp-twemoji=""/> Adapters</h1>
-<footer>Christian Ekrem – @Lovdata</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-" lang="C" data-marpit-pagination="19" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-;" data-marpit-pagination-total="25">
-<h1 id="real-adapter-lovdataapiadapter">Real adapter: <code>LovdataApiAdapter</code></h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">class</span> <span class="hljs-title class_">LovdataApiAdapter</span> <span class="hljs-meta">@Inject</span> <span class="hljs-keyword">constructor</span>(
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> httpClient: HttpClient,
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> documentService: DocumentService
-) : LLMPort {
-
-    <span class="hljs-keyword">override</span> <span class="hljs-keyword">suspend</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">chat</span><span class="hljs-params">(userID: <span class="hljs-type">Int</span>, conversation: <span class="hljs-type">Conversation</span>)</span></span> =
-        either {
-            <span class="hljs-keyword">val</span> docs = findRelevantDocuments(userID, ...).bind()
-            <span class="hljs-keyword">val</span> request = buildChatRequest(userID, conversation, docs)
-            <span class="hljs-keyword">val</span> (response, name) = generateResponseAndName(request).bind()
-            conversation
-                .withNameIfNotNull(name)
-                .withMessage(MessageV2.System(response, docs))
-        }
-    <span class="hljs-comment">// 300+ lines: HTTP calls, DTO mapping, error handling...</span>
-}
-</code></pre>
-<p><img class="emoji" draggable="false" alt="🏭" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f3ed.svg" data-marp-twemoji=""/> All the complexity is <strong>encapsulated</strong> behind <code>LLMPort</code></p>
-<footer>Christian Ekrem – @Lovdata</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-" lang="C" data-marpit-pagination="20" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-;" data-marpit-pagination-total="25">
-<h1 id="mock-adapter-mockllmadapter">Mock adapter: <code>MockLLMAdapter</code></h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MockLLMAdapter</span> : <span class="hljs-type">LLMPort</span> {
-    <span class="hljs-keyword">override</span> <span class="hljs-keyword">suspend</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">chat</span><span class="hljs-params">(
-        userID: <span class="hljs-type">Int</span>, conversation: <span class="hljs-type">Conversation</span>
-    )</span></span>: Either&lt;AISearchErrorV2, Conversation&gt; =
-        conversation.withMessage(mockResponse()).right()
-}
-</code></pre>
-<p><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/2705.svg" data-marp-twemoji=""/> Same interface — <strong>5 lines</strong> instead of 300+</p>
-<p>The use cases can't tell the difference. That's the whole point.</p>
-<footer>Christian Ekrem – @Lovdata</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-" lang="C" data-marpit-pagination="21" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-;" data-marpit-pagination-total="25">
-<h1 id="what-did-we-gain-%F0%9F%94%84">What did we gain? <img class="emoji" draggable="false" alt="🔄" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f504.svg" data-marp-twemoji=""/></h1>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>V1</th>
-<th>V2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Structure</strong></td>
-<td>One big <code>AISearchService</code></td>
-<td>Ports + Adapters + Usecases</td>
-</tr>
-<tr>
-<td><strong>Storage</strong></td>
-<td>Flat JSON blob</td>
-<td>Normalized tables</td>
-</tr>
-<tr>
-<td><strong>Error handling</strong></td>
-<td>Route level only</td>
-<td>In the domain model (<code>Either</code>)</td>
-</tr>
-<tr>
-<td><strong>Conversations</strong></td>
-<td>Don't exist</td>
-<td>First-class aggregate</td>
-</tr>
-<tr>
-<td><strong>Swap LLM/search implementation</strong></td>
-<td>Rewrite the service</td>
-<td>Write one new adapter</td>
-</tr>
-<tr>
-<td><strong>Testing</strong></td>
-<td>Mock the whole service</td>
-<td>Inject a mock adapter</td>
-</tr>
-</tbody>
-</table>
-<footer>Christian Ekrem – @Lovdata</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-" lang="C" data-marpit-pagination="22" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-;" data-marpit-pagination-total="25">
-<h1 id="when-requirements-change-%F0%9F%92%A1">When requirements change... <img class="emoji" draggable="false" alt="💡" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f4a1.svg" data-marp-twemoji=""/></h1>
-<p><strong>&quot;We're switching from lovdata-api to direct search or some other vastly different setup&quot;</strong><br />
-→ Write a new adapter that implements <code>LLMPort</code>. Done.</p>
-<p><strong>&quot;We need a different storage solution&quot;</strong><br />
-→ Write a new adapter that implements <code>CachePort</code>. Done.</p>
-<p><strong>&quot;We want to add a new feature&quot;</strong><br />
-→ Create a new use case. Existing code stays untouched.</p>
-<p>No changes to domain logic. No changes to other adapters.</p>
-<footer>Christian Ekrem – @Lovdata</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-" lang="C" data-marpit-pagination="23" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-;" data-marpit-pagination-total="25">
-<h1 id="testing-without-pain-%F0%9F%A7%AA">Testing without pain <img class="emoji" draggable="false" alt="🧪" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f9ea.svg" data-marp-twemoji=""/></h1>
-<p>Both implement the same interface:</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-kotlin"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">LLMPort</span> {
-    <span class="hljs-keyword">suspend</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">chat</span><span class="hljs-params">(
-        userID: <span class="hljs-type">Int</span>,
-        conversation: <span class="hljs-type">Conversation</span>
-    )</span></span>: Either&lt;AISearchErrorV2, Conversation&gt;
-}
-</code></pre>
-<p>4 lines that define the contract.</p>
-<p>No <code>every { }</code>, <code>verify { }</code>, <code>@MockBean</code>.<br />
-Just a class that implements an interface.</p>
-<footer>Christian Ekrem – @Lovdata</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-" lang="C" data-marpit-pagination="24" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-;" data-marpit-pagination-total="25">
-<h1 id="etc-as-a-daily-design-habit-%F0%9F%A7%AD">ETC as a daily design habit <img class="emoji" draggable="false" alt="🧭" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f9ed.svg" data-marp-twemoji=""/></h1>
-<blockquote>
-<p><em>&quot;ETC is a value, not a rule. [...] It's the ultimate arbiter<br />
-between design alternatives.&quot;</em><br />
-— The Pragmatic Programmer</p>
-</blockquote>
-<p>Not an architecture pattern you &quot;follow&quot; — a daily habit:</p>
-<ul>
-<li><strong>Before you write code:</strong> <em>&quot;Does this make it easier to change later?&quot;</em></li>
-<li><strong>When in doubt:</strong> <em>&quot;Which solution is easier to change?&quot;</em></li>
-<li><strong>When someone asks why:</strong> <em>&quot;Because change is cheap.&quot;</em></li>
-</ul>
-<p>Architecture isn't about being &quot;clean&quot; or &quot;correct&quot;.<br />
-It's about making <strong>the next change cheap</strong>.</p>
-<footer>Christian Ekrem – @Lovdata</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-footer="Christian Ekrem – @Lovdata" data-theme="default" data-style="section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-" lang="C" data-marpit-pagination="25" style="--paginate:true;--footer:Christian Ekrem – @Lovdata;--theme:default;--style:section {
-  overflow: auto;
-  font-size: 0.9rem;
-}
-;" data-marpit-pagination-total="25">
-<h1 id="thanks-%F0%9F%99%8F">Thanks! <img class="emoji" draggable="false" alt="🙏" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f64f.svg" data-marp-twemoji=""/></h1>
-<p><strong>Questions?</strong></p>
+;" data-marpit-pagination-total="16">
+<h1 id="takk">Takk</h1>
+<p>Tre og et halvt år på Lovdata.</p>
+<p>Elm i frontend: deterministisk fra dag én.<br />
+Maven i backend: SNAPSHOT helt til slutt.</p>
+<p>Dere vet hva som er riktig. <img class="emoji" draggable="false" alt="🙂" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.2/assets/svg/1f642.svg" data-marp-twemoji=""/></p>
+<p><strong>Spørsmål?</strong></p>
 <footer>Christian Ekrem – @Lovdata</footer>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()})}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame(()=>{t.style.display=""}))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=Symbol(),l=()=>o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o);let c;const d="marpitSVGPolyfill:setZoomFactor,",h=Symbol(),g=Symbol();const p=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[v]:[],i={then:e=>(t?(async()=>{if(void 0===c){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise(t=>{i.addEventListener("load",()=>t())});i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),c=e.getImageData(5,5,1,1).data[3]<128}return c})().then(t=>{null==e||e(t?[v]:[])}):null==e||e([]),i)};return Object.assign(e,i)};let m,u;function v(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(d)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(u=i)}}catch(t){console.error(t)}}));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||u||t.currentScale||1;m!==a&&(m=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}}),!1!==n&&Array.from(e.querySelectorAll("iframe"),({contentWindow:t})=>{null==t||t.postMessage(`${d}${n}`,"null"===window.origin?"*":window.origin)})}function w({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[h])return t[h];let e=!0;const i=()=>{e=!1,delete t[h]};Object.defineProperty(t,h,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await p()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}m=1,u=void 0;const b=Symbol(),y=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[a];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,o=t[n].proto();l()&&o!==HTMLElement?i||customElements.define(s,r(o,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach(t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)}))}window[a]=!0})(e),e[b])return e[b];const i=w({target:e}),n=()=>{i(),delete e[b]},o=Object.assign(n,{cleanup:n,update:()=>y(e)});return Object.defineProperty(e,b,{configurable:!0,value:o}),o},f=document.currentScript;y(f?f.getRootNode():document)}();
