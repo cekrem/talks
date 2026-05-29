@@ -1,3 +1,5 @@
 *.html
 **/*/elm-stuff/
 dist/
+/ignore
+.claude/skills
